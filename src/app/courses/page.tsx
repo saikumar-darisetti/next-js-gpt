@@ -60,9 +60,9 @@ export default async function CoursesPage() {
     }
 
     return (
-        <div>
-            <h1>Courses</h1>
-            <ul>
+        <div className="p-6">
+            <h1 className="text-2xl font-bold mb-4">Courses</h1>
+            <ul className="grid gap-4">
                 {courses.map((course: Course) => (
                     <li key={course.id} className="course-item">
                         <Link href={`/courses/${course.id}`} className="course-link">
